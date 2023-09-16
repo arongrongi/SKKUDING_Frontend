@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Pokemon main site
+        </title>
+
+        <style>
+            body{ /*전체 배경색 & 폰트색 지정*/
+                background-color: black;
+            }
+
+            .container{
+                display: flex; /*flex 시작*/
+                flex-direction: column; /*가로로 표시*/
+                justify-content: center; /*가운데 정렬*/
+            }
+            
+            header{
+                border-bottom: 1px solid #F7C437; /*헤더 밑줄 노란색*/
+                justify-content: center;
+                align-items: center;
+                width:100%;
+            }
+
+            main{
+                margin:5rem;
+                margin-left:10rem;
+                margin-right: 10rem;
+
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:4rem;
+            }
+
+            #select-border{
+                display: flex;
+                border: 1px solid #F7C437;
+                align-items: center;
+                border-radius: 0.5rem;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            #select-border:hover{
+                border-color:yellow;
+            }
+
+            .select{
+                display:flex;
+                margin-left:1rem;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .information{
+                text-decoration: none;
+                color:white;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            
+            <header>
+                <h1 class="pokemon_list_head" style="color:#F7C437">
+                    <strong><a href="Pokemon.html" style="text-decoration: none; color:#F7C437">
+                        Pokemon List
+                    </a></strong>
+                </h1>
+            </header>
+
+            <section>
+                <main>
+
+                  <div id="select-border">
+                    <a class="select" href="1.Bulbasaur.html">
+                        <img src="Bulbasaur.jpg" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Bulbasaur</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="2.Ivysaur.html">
+                        <img src="Ivysaur.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Ivysaur</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="3.Venusaur.html">
+                        <img src="Venusaur.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Venusaur</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="4.Charmander.html">
+                        <img src="Charmander.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Charmander</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="5.Charmeleon.html">
+                        <img src="Charmeleon.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Charmeleon</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="6.Charizard.html">
+                        <img src="Charizard.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Charizard</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="7.Squirtle.html">
+                        <img src="Squirtle.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Squirtle</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="8.Wartortle.html">
+                        <img src="Wartortle.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Wartortle</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="9.Blastoise.html">
+                        <img src="Blastoise.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Blastoise</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div id="select-border">
+                    <a class="select" href="10.Caterpie.html">
+                        <img src="Caterpie.png" width="20%">
+
+                        <div class="information">
+                            <h2><strong>Caterpie</strong></h2>
+                            <P style="color:gray">height: 7dm</p>
+                            <P style="color:gray">weight: 69hg</p>
+                            <P style="color:gray">types: grass,poison</p>
+                        </div>
+                    </a>
+                  </div>
+                </main>
+            </section>
+
+        </div>
+    </body>
+</html>
