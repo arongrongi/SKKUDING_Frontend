@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Pokemon main site
+        </title>
+
+        <style>
+            body{ /*전체 배경색 & 폰트색 지정*/
+                background-color: black;
+            }
+
+            .container{
+                display: flex; /*flex 시작*/
+                flex-direction: column; /*가로로 표시*/
+                justify-content: center; /*가운데 정렬*/
+            }
+            
+            header{
+                border-bottom: 1px solid #F7C437; /*헤더 밑줄 노란색*/
+                justify-content: center;
+                align-items: center;
+            }
+
+            main{
+                margin:5rem;
+                margin-left:10rem;
+                margin-right: 10rem;
+
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:4rem;
+            }
+
+            #select-border{
+                display: flex;
+                border: 1px solid #F7C437;
+                align-items: center;
+                border-radius: 0.5rem;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            #select-border:hover{
+                border-color:yellow;
+            }
+
+            .select{
+                display:flex;
+                margin-left:1rem;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .information{
+                text-decoration: none;
+                color:white;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+        </style>
+
+        <script src="pokemon.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="container">
+            
+            <header>
+                <h1 class="pokemon_list_head" style="color:#F7C437">
+                    <strong><a href="index.html" style="text-decoration: none; color:#F7C437">
+                        Pokemon List
+                    </a></strong>
+                </h1>
+            </header>
+
+            <section>
+                <main>
+
+                  <div id="select-border"></div>
+
+                </main>
+            </section>
+
+        </div>
+    </body>
+</html>
