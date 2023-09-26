@@ -141,32 +141,32 @@ const data = [
   },
 ]
 
-
 //html 10개 선택 구간 ID를 select-border DOM 구조로 묶기
 const selectBorder = document.getElementById("select-border");
 
-for(a of data){
+data.forEach((a, index) => { // data 배열 안에 있는 각각의 객체 요소들을 pokemon 파라미터로 가져오기
   const topNode = document.createElement('div'); // 가장 위의 div 태그 선언
 
   topNode.classList.add('select'); // select 클래스 선언
   const image = document.createElement("img");
   image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
-    index + 1
-  }.png` //깃허브에서 각 인덱스 가져오기
-  select.appendChild(img); // 클래스에 이미지 노드 붙이기
+    index + 1}.png` //깃허브에서 각 인덱스 가져오기
+  topNode.appendChild(image); // 클래스에 이미지 노드 붙이기
 
   const inform = document.createElement('div'); // information 넣을 inform div 태그 선언
-  const h2Text = inform.createElement('h2'); // 1. h2 태그 선언
-  const pHeight = inform.createElement('p'); // 2. Height 넣는 p 태그 선언
-  const pWeight = inform.createElement('p'); // 3. Weight 넣는 p 태그 선언
-  const pTypes = inform.createElement('p'); // 4. type 넣는 p 태그 선언
+  inform.classList.add('inform_border'); // inform의 클래스 선언
+
+  const h2Text = document.createElement('h2'); // 1. h2 태그 선언
+  const pHeight = document.createElement('p'); // 2. Height 넣는 p 태그 선언
+  const pWeight = document.createElement('p'); // 3. Weight 넣는 p 태그 선언
+  const pTypes = document.createElement('p'); // 4. type 넣는 p 태그 선언
 
   h2Text.innerText = a.name; // data 배열에서 이름 받아오기
   pHeight.innerText = `Height: ${a.height}`; // height 받아오기
   pWeight.innerText = `Weight: ${a.weight}`; // weight 받아오기
-  pTypes.innerText = `Types: ${a.types.join(", ")}`; // types 받아오기
+  pTypes.innerText = `Types: ${a.types.join(', ')}`; // types 받아오기
 
   inform.append(h2Text, pHeight, pWeight, pTypes); // inform 노드에 Text, height, weight, types 노드 붙이기
-  select.appendChild(inform); // select 클래스에 inform 노드 붙이기
-  selectBorder.appendChild(select);
-}
+  topNode.appendChild(inform); // select 클래스에 inform 노드 붙이기
+  selectBorder.appendChild(topNode); //최종적으로 selectBorder 노드에 붙이기
+}); //이걸 10번 반복
