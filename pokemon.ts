@@ -28,7 +28,7 @@ interface dataProps{
   }[];
 }
 
-const data =({data}:dataProps) => [
+const data:any =({data}:dataProps) => [
   {
     name: 'Bulbasaur',
     height: '7',
@@ -175,7 +175,7 @@ const data =({data}:dataProps) => [
 //html 10개 선택 구간 ID를 select-border DOM 구조로 묶기
 let selectBorder: any = document.getElementById("select-border");
 
-data.forEach((a:any, index:any) => { // data 배열 안에 있는 각각의 객체 요소들을 pokemon 파라미터로 가져오기
+data.forEach((a, index) => { // data 배열 안에 있는 각각의 객체 요소들을 pokemon 파라미터로 가져오기
   let topNode:any = document.createElement('div'); // 가장 위의 div 태그 선언
 
   topNode.classList.add('select'); // select 클래스 선언
