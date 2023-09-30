@@ -28,7 +28,7 @@ interface dataProps{
   }[];
 }
 
-const data:any =({data}:dataProps) => [
+const data:any = [
   {
     name: 'Bulbasaur',
     height: '7',
